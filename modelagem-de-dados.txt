@@ -1,0 +1,111 @@
++----------------------------------+
+|           Consultorio            |
++----------------------------------+
+| - pacientes: List<Paciente>      |
+| - dentistas: List<Dentista>      |
+| - consultas: List<Consulta>      |
+| - procedimentos: List<Procedimento>|
+| - pagamentos: List<Pagamento>    |
++----------------------------------+
+| + agendarConsulta()              |
+| + registrarPaciente()            |
+| + registrarDentista()            |
+| + registrarProcedimento()        |
+| + registrarPagamento()           |
++----------------------------------+
+
++----------------------------------+
+|           Paciente               |
++----------------------------------+
+| - id: int                        |
+| - nome: String                   |
+| - endereco: String               |
+| - telefone: String               |
+| - dataNascimento: Date           |
++----------------------------------+
+| + getId(): int                   |
+| + getNome(): String              |
+| + getEndereco(): String          |
+| + getTelefone(): String          |
+| + getDataNascimento(): Date      |
+| + setId(int): void               |
+| + setNome(String): void          |
+| + setEndereco(String): void      |
+| + setTelefone(String): void      |
+| + setDataNascimento(Date): void  |
++----------------------------------+
+
++----------------------------------+
+|           Dentista               |
++----------------------------------+
+| - id: int                        |
+| - nome: String                   |
+| - especialidade: String          |
+| - telefone: String               |
++----------------------------------+
+| + getId(): int                   |
+| + getNome(): String              |
+| + getEspecialidade(): String     |
+| + getTelefone(): String          |
+| + setId(int): void               |
+| + setNome(String): void          |
+| + setEspecialidade(String): void |
+| + setTelefone(String): void      |
++----------------------------------+
+
++----------------------------------+
+|           Consulta               |
++----------------------------------+
+| - id: int                        |
+| - paciente: Paciente             |
+| - dentista: Dentista             |
+| - data: Date                     |
+| - hora: String                   |
+| - procedimentos: List<Procedimento>|
++----------------------------------+
+| + getId(): int                   |
+| + getPaciente(): Paciente        |
+| + getDentista(): Dentista        |
+| + getData(): Date                |
+| + getHora(): String              |
+| + getProcedimentos(): List<Procedimento>|
+| + setId(int): void               |
+| + setPaciente(Paciente): void    |
+| + setDentista(Dentista): void    |
+| + setData(Date): void            |
+| + setHora(String): void          |
+| + setProcedimentos(List<Procedimento>): void |
++----------------------------------+
+
++----------------------------------+
+|         Procedimento             |
++----------------------------------+
+| - id: int                        |
+| - descricao: String              |
+| - preco: double                  |
++----------------------------------+
+| + getId(): int                   |
+| + getDescricao(): String         |
+| + getPreco(): double             |
+| + setId(int): void               |
+| + setDescricao(String): void     |
+| + setPreco(double): void         |
++----------------------------------+
+
++----------------------------------+
+|           Pagamento              |
++----------------------------------+
+| - id: int                        |
+| - consulta: Consulta             |
+| - valor: double                  |
+| - data: Date                     |
++----------------------------------+
+| + getId(): int                   |
+| + getConsulta(): Consulta        |
+| + getValor(): double             |
+| + getData(): Date                |
+| + setId(int): void               |
+| + setConsulta(Consulta): void    |
+| + setValor(double): void         |
+| + setData(Date): void            |
++----------------------------------+
